@@ -1,5 +1,5 @@
-values <- read.csv("~/Documents/TeachingResources/YouTube/PieChart/ToppingMoviePreference.csv",row.names=1, check.names=FALSE,header=TRUE)
-values2 <- read.csv("~/Documents/TeachingResources/YouTube/PieChart/OD_Data.csv",row.names=1, header=TRUE)
+values <- read.csv("ToppingMoviePreference.csv",row.names=1, check.names=FALSE,header=TRUE)
+values2 <- read.csv("OD_Data.csv",row.names=1, header=TRUE)
 
 require("RColorBrewer")
 indices <- values[,1]!=0
