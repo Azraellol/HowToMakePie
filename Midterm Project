@@ -1,0 +1,13 @@
+#To find the frequency Diabetese, just add the numbers in each column of NHANES.dataframe.
+colSums(NHANES.dataframe)
+
+#Assign the frequencies to a variable, NHANES.frequency.
+NHANES.frequency = colSums(NHANES.dataframe)[1:2]
+
+#To see the color frequencies, type mm.frequency at the command prompt in the R console and press the return key.
+NHANES.frequency
+
+#Now assign the population size to a variable, population.size.
+population.size = colSums(NHANES.dataframe)["total"]
+
+#Calculate the relative frequencies by dividing the frequencies by the population size.
